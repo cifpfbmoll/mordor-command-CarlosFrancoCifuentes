@@ -1,4 +1,4 @@
-package edu.pingpong.mordorcomand;
+package edu.pingpong.mordorcommand;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -12,6 +12,18 @@ import java.util.List;
 import java.util.Set;
 
 import org.junit.Test;
+
+import edu.pingpong.mordorcommand.interfaces.Pedido;
+import edu.pingpong.mordorcommand.interfaces.PedidoPeligroso;
+import edu.pingpong.mordorcommand.interfaces.Procesador;
+import edu.pingpong.mordorcommand.interfaces.TratamientoPedido;
+import edu.pingpong.mordorcommand.pedidos.PedidoInternacional;
+import edu.pingpong.mordorcommand.pedidos.PedidoNacional;
+import edu.pingpong.mordorcommand.pedidos.PedidoPeligrosoOrden;
+import edu.pingpong.mordorcommand.procesadores.Oficina;
+import edu.pingpong.mordorcommand.tratamientos.TratamientoPedidoInternacional;
+import edu.pingpong.mordorcommand.tratamientos.TratamientoPedidoMultiple;
+import edu.pingpong.mordorcommand.tratamientos.TratamientoPedidoPeligroso;
 
 public class TestPedidos {
 
@@ -219,7 +231,7 @@ public class TestPedidos {
          * 
          */
 
-        pedidosMult.calcularTotalBultos();
+        pedidosMult.calcularBultosTotal();
         assertEquals(3, pedidosMult.getNumBultos(), 0);
 
         pedidosMult.calcularPesoTotal();
@@ -230,4 +242,5 @@ public class TestPedidos {
          */
         assertTrue(pedidosMult.tratar());
     }
+    
 }

@@ -1,13 +1,16 @@
-package edu.pingpong.mordorcomand.tratamientos;
+package edu.pingpong.mordorcommand.pedidos;
 
-import edu.pingpong.mordorcomand.interfaces;
+import java.util.UUID;
 
-public class PedidoInternacional implements Pedido {
+import edu.pingpong.mordorcommand.interfaces.Pedido;
+
+public class PedidoInternacional implements Pedido{
     private final String id;
     private String destino;
     private int peso;
 
     public PedidoInternacional(String destino, int peso) {
+        this.id = UUID.randomUUID().toString();
         this.destino = destino;
         this.peso = peso;
     }
@@ -22,4 +25,7 @@ public class PedidoInternacional implements Pedido {
         return this.destino;
     }
 
+    public String getId() {
+        return this.id;
+    }
 }

@@ -1,4 +1,4 @@
-package edu.pingpong.mordorcomand.interfaces;
+package edu.pingpong.mordorcommand.interfaces;
 
 public interface Pedido {
     public int peso();

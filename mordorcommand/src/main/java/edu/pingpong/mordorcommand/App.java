@@ -1,4 +1,13 @@
-package edu.pingpong.mordorcomand;
+package edu.pingpong.mordorcommand;
+
+import edu.pingpong.mordorcommand.interfaces.Pedido;
+import edu.pingpong.mordorcommand.interfaces.PedidoPeligroso;
+import edu.pingpong.mordorcommand.interfaces.TratamientoPedido;
+import edu.pingpong.mordorcommand.pedidos.PedidoInternacional;
+import edu.pingpong.mordorcommand.pedidos.PedidoPeligrosoOrden;
+import edu.pingpong.mordorcommand.procesadores.Oficina;
+import edu.pingpong.mordorcommand.tratamientos.TratamientoPedidoInternacional;
+import edu.pingpong.mordorcommand.tratamientos.TratamientoPedidoPeligroso;
 
 /**
  * Crea una oficina que procesa pedidos.

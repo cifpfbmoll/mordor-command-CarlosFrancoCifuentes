@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>edu.pingpong</groupId>
-  <artifactId>mordorcomand</artifactId>
+  <artifactId>mordorcommand</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>mordorcomand</name>
+  <name>mordorcommand</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -61,7 +61,7 @@
                         <archive>
                             <manifest>
                                 <addClasspath>true</addClasspath>
-                                <mainClass>edu.pingpong.mordor-comand.App</mainClass>
+                                <mainClass>edu.pingpong.mordorcommand.App</mainClass>
                                 <classpathPrefix>dependency-jars/</classpathPrefix>
                             </manifest>
                         </archive>
